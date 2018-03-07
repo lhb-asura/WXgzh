@@ -11,6 +11,9 @@ robot.config['PORT'] = 8022
 
 robot.run()
 
-@robot.handler
+@robot.text
 def hello(message):
     return "您发送了一条信息："+message.content
+@robot.image
+def img(message):
+    return "您发送了一张图片"
