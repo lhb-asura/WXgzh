@@ -13,7 +13,7 @@ robot.run()
 
 @robot.text
 def hello(message):
-    return "您发送了一条信息："+message.content
+    return "you send a text："+message.content
 @robot.image
 def img(message):
-    return "您发送了一张图片"
+    return "you send a image"
